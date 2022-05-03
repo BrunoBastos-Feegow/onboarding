@@ -47,7 +47,8 @@ c:\xampp\mysql\bin\mysqld --initialize-insecure
 > NOTA: Inicie o Painel de Controle do Xampp como administrador caso queira instalar o Apache e o MySQL como serviços do
 > Windows.
 
-![img_1.png](img_1.png)
+![img_1](https://user-images.githubusercontent.com/104787592/166390644-a0872758-dfb6-4bf4-97f3-4798c66336e0.png)
 
 Pronto, o Xampp agora vai iniciar o MySQL na versão 5.7.38.
-![img_2.png](img_2.png)
+
+![img_2](https://user-images.githubusercontent.com/104787592/166390656-9cdb71cf-ad3d-437e-b687-1c23075a759b.png)
