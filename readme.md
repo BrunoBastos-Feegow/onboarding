@@ -23,6 +23,7 @@ possua alguma base de dados, não esqueça de fazer os backups necessários**
 ```
 # c:/xampp/mysql/bin/my.ini
 [mysqld]
+sql_mode='STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
 # set basedir to your installation path
 basedir=c:/xampp/mysql
 # set datadir to the location of your data directory
