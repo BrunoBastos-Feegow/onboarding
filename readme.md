@@ -39,12 +39,12 @@ possua alguma base de dados, não esqueça de fazer os backups necessários**
 
 # The following options will be passed to all MySQL clients
 [client]
-# password       = your_password 
+# password       = your_password
 port=3306
 socket="C:/xampp/mysql/mysql.sock"
 
 
-# Here follows entries for some specific programs 
+# Here follows entries for some specific programs
 
 # The MySQL server
 default-character-set=utf8mb4
@@ -57,16 +57,16 @@ datadir="C:/xampp/mysql/data"
 pid_file="mysql.pid"
 # enable-named-pipe
 key_buffer_size=16M
-max_allowed_packet=1M
-sort_buffer_size=512K
-net_buffer_length=8K
-read_buffer_size=256K
-read_rnd_buffer_size=512K
-myisam_sort_buffer_size=8M
+max_allowed_packet=8M
+sort_buffer_size=1M
+net_buffer_length=16K
+read_buffer_size=512K
+read_rnd_buffer_size=1M
+myisam_sort_buffer_size=16M
 log_error="mysql_error.log"
 
 # Change here for bind listening
-# bind-address="127.0.0.1" 
+# bind-address="127.0.0.1"
 # bind-address = ::1          # for ipv6
 
 # Where do all the plugins live
@@ -77,7 +77,7 @@ plugin_dir="C:/xampp/mysql/lib/plugin/"
 # All interaction with mysqld must be made via Unix sockets or named pipes.
 # Note that using this option without enabling named pipes on Windows
 # (via the "enable-named-pipe" option) will render mysqld useless!
-# 
+#
 # commented in by lampp security
 #skip-networking
 #skip-federated
@@ -164,10 +164,10 @@ innodb_log_group_home_dir="C:/xampp/mysql/data"
 #innodb_log_arch_dir = "C:/xampp/mysql/data"
 ## You can set .._buffer_pool_size up to 50 - 80 %
 ## of RAM but beware of setting memory usage too high
-innodb_buffer_pool_size=16M
+innodb_buffer_pool_size=32M
 ## Set .._log_file_size to 25 % of buffer pool size
 innodb_log_file_size=5M
-innodb_log_buffer_size=8M
+innodb_log_buffer_size=16M
 innodb_flush_log_at_trx_commit=1
 innodb_lock_wait_timeout=50
 
@@ -184,23 +184,23 @@ log_bin_trust_function_creators=1
 character-set-server=utf8mb4
 collation-server=utf8mb4_general_ci
 [mysqldump]
-max_allowed_packet=16M
+max_allowed_packet=32M
 
 [mysql]
 # Remove the next comment character if you are not familiar with SQL
 #safe-updates
 
 [isamchk]
-key_buffer_size=20M
-sort_buffer_size=20M
-read_buffer=2M
-write_buffer=2M
+key_buffer_size=32M
+sort_buffer_size=32M
+read_buffer=4M
+write_buffer=4M
 
 [myisamchk]
-key_buffer_size=20M
-sort_buffer_size=20M
-read_buffer=2M
-write_buffer=2M
+key_buffer_size=32M
+sort_buffer_size=32M
+read_buffer=4M
+write_buffer=4M
 
 [mysqlhotcopy]
 
