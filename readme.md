@@ -3,7 +3,7 @@
 ### AMBIENTE DE DESENVOLVIMENTO (Apache 2.4, PHP 7.2 e MySQL 5.7)
 
 - XAMPP 7.2.34 [download](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.2.34/xampp-windows-x64-7.2.34-2-VC15-installer.exe/download)
-- MySQL 5.7 (.zip) [download](https://dev.mysql.com/downloads/file/?id=51045)
+- MySQL 5.7 (.zip) [download](https://dev.mysql.com/downloads/file/?id=510458)
     - se o MySQL não estiver inicializando, talvez você precise instalar o [Visual C++ Redistributable 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 - HeidiSQL [download](https://www.heidisql.com/download.php)
 - Git [download](https://git-scm.com/download/win)
